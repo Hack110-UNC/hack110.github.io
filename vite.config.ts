@@ -1,13 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from "vite";
+import tailwindcss from "tailwindcss";
 
-
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss()
-  ],
-
-})
+  css: {
+    postcss: {
+      plugins: [tailwindcss()],
+    },
+  },
+  base: '/Hack110-UNC/hack110.github.io/',
+});
