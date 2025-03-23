@@ -8,5 +8,5 @@ export default defineConfig({
       plugins: [tailwindcss()],
     },
   },
-  base: '/Hack110-UNC/',
+  base: '/hack110.github.io/',
 });
