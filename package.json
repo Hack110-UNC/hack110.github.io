@@ -1,5 +1,6 @@
 {
   "name": "hack-110-website",
+  "homepage": "https://hack110-unc.github.io/Hack110/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
