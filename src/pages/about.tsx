@@ -25,7 +25,7 @@ export default function about() {
                     </Link>
                     <nav>
                         <ul className="flex gap-8">
-                            <li><Link to="/" className="hover:text-blue-400 transition">Home</Link></li>
+                            <li><Link to="/hack110" className="hover:text-blue-400 transition">Home</Link></li>
                             <li><Link to="/about" className="hover:text-blue-400 transition">About</Link></li>
                             <li><Link to="/map" className="hover:text-blue-400 transition">Map</Link></li>
                             <li><Link to="/workshops" className="hover:text-blue-400 transition">Workshops</Link></li>
@@ -49,7 +49,7 @@ export default function about() {
                             className="p-8 rounded-lg backdrop-blur-sm relative h-64"
                         >
                             <img 
-                                src="/F24-StittersonLobby.png" 
+                                src="./F24-StittersonLobby.png" 
                                 alt="COMP 110 Logo" 
                                 className="object-contain"
                             />
@@ -97,7 +97,7 @@ export default function about() {
                             </div>
                             <div className="relative h-80 rounded-lg overflow-hidden">
                                 <img 
-                                    src="/F24-TAJudge.png" 
+                                    src="./F24-TAJudge.png" 
                                     alt="Students at Hack 110" 
                                     className="object-cover"
                                 />
@@ -122,7 +122,7 @@ export default function about() {
                                     className="relative h-48 rounded-lg overflow-hidden"
                                 >
                                     <img 
-                                        src={`/gallery-${i}.png`} 
+                                        src={`./gallery-${i}.png`} 
                                         alt={`Hack 110 Gallery Image ${i}`} 
                                         className="object-cover hover:scale-105 transition-transform duration-300"
                                     />

@@ -22,7 +22,7 @@ export default function Map() {
           
           <nav>
             <ul className="flex gap-8">
-              <li><Link to="/" className="hover:text-blue-400 transition">Home</Link></li>
+              <li><Link to="hack110/" className="hover:text-blue-400 transition">Home</Link></li>
               <li><Link to="/about" className="hover:text-blue-400 transition">About</Link></li>
               <li><Link to="/map" className="hover:text-blue-400 transition">Map</Link></li>
               <li><Link to="/workshops" className="hover:text-blue-400 transition">Workshops</Link></li>
@@ -43,7 +43,7 @@ export default function Map() {
         <div className="flex justify-center gap-4 p-2">
   <motion.div>
     <img 
-      src="/SittBrooks_level_0_horiz_no_labels-1536x1006.jpg" 
+      src="./SittBrooks_level_0_horiz_no_labels-1536x1006.jpg" 
       alt="SittBrooks_level_0" 
       width={500} 
       height={500}
@@ -52,7 +52,7 @@ export default function Map() {
   </motion.div>
   <motion.div>
     <img 
-      src="/SittBrooks_level_1_horiz_no_labels-1536x985.jpg" 
+      src="./SittBrooks_level_1_horiz_no_labels-1536x985.jpg" 
       alt="SittBrooks_level_1" 
       width={500} 
       height={500}
@@ -61,7 +61,7 @@ export default function Map() {
   </motion.div>
   <motion.div>
     <img 
-      src="/SittBrooks_level_2_horiz_no_labels-scaled.jpg" 
+      src="./SittBrooks_level_2_horiz_no_labels-scaled.jpg" 
       alt="SittBrooks_level_2" 
       width={500} 
       height={500}
