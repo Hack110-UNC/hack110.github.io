@@ -11,5 +11,5 @@ export default defineConfig({
       plugins: [tailwindcss()],
     },
   },
-  base: '/Hack110/',
+  base: '/hack110/',
 });
