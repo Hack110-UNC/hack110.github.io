@@ -1,0 +1,44 @@
+name: Deploy Vite React App
+
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch name if different
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write  # Required to push to GitHub Pages
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Configure GitHub Pages
+        run: |
+          mkdir -p dist
+          echo '<!DOCTYPE html><html lang="en"><head><meta http-equiv="refresh" content="0;url=/index.html"></head></html>' > dist/404.html
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # Deployment branch
+          folder: dist      # The folder to deploy
+          clean: true       # Remove old files
