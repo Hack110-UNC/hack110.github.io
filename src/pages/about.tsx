@@ -25,7 +25,7 @@ export default function about() {
                     </Link>
                     <nav>
                         <ul className="flex gap-8">
-                            <li><Link to="/hack110" className="hover:text-blue-400 transition">Home</Link></li>
+                            <li><Link to="/" className="hover:text-blue-400 transition">Home</Link></li>
                             <li><Link to="/about" className="hover:text-blue-400 transition">About</Link></li>
                             <li><Link to="/map" className="hover:text-blue-400 transition">Map</Link></li>
                             <li><Link to="/workshops" className="hover:text-blue-400 transition">Workshops</Link></li>
