@@ -1,18 +1,7 @@
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 export default function about() {
-    const [, setScrollY] = useState(0);
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrollY(window.scrollY);
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-    
-
     return (
         <div className="min-h-screen bg-gradient-to-b from-pink-900 via-orange-500 to-teal-300 text-white">
             {/* Header */}
