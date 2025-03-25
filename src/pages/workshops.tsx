@@ -33,9 +33,19 @@ export default function Workshops() {
         <h2 className="text-4xl font-extrabold text-center mb-12">Workshops</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
-            { time: "9am", room: "SN 100", workshop: "Balls" },
-            { time: "10am", room: "SN 200", workshop: "Intro to Coding" },
-            { time: "11am", room: "SN 300", workshop: "Web Development" },
+            { time: "10:30 - 11:00 AM", room: "SN 014", workshop: "Team Building Event" },
+            { time: "10:30 - 11:00 AM", room: "SN 011", workshop: "Project + Git Setup" },
+            { time: "12:00 - 1:00 PM", room: "SN 014", workshop: "Web Development" },
+            { time: "12:00 - 1:00 PM", room: "SN 011", workshop: "Game Development" },
+            { time: "1:00 - 2:00 PM", room: "SN 115", workshop: "IOS Development " },
+            { time: "1:30 - 2:00 PM", room: "SN 014", workshop: "Resume Workshop" },
+            { time: "2:00 - 5:00 PM", room: "FB 009", workshop: "Escape Room" },
+            { time: "3:00 - 3:30 PM", room: "FB 009", workshop: "CS Outside the Classroom" },
+            { time: "3:30 - 4:00 PM", room: "FB 009", workshop: "Machine Learning/AI Workshop" },
+            { time: "4:00 - 7:00 PM", room: "FB 009", workshop: "Poker" },
+            { time: "6:00 - 6:30 PM", room: "IDK", workshop: "Navigating The Major" },
+            { time: "6:30 - 7:00 PM", room: "IDK", workshop: "Leetcode Workshop" },
+            { time: "7:00 - 8:00 PM", room: "SN 115", workshop: "Kahoot Trivia" },
           ].map((shop, i) => (
             <motion.div 
               key={i} 

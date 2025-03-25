@@ -12,7 +12,7 @@ export default function Map() {
           </Link>
           
           <nav>
-            <ul className="flex gap-8">
+            <ul className="flex flex-col sm:flex-row sm:gap-8 gap-4 items-center text-lg">
               <li><Link to="/" className="hover:text-blue-400 transition">Home</Link></li>
               <li><Link to="/about" className="hover:text-blue-400 transition">About</Link></li>
               <li><Link to="/map" className="hover:text-blue-400 transition">Map</Link></li>
@@ -31,7 +31,7 @@ export default function Map() {
         transition={{ duration: 0.6 }}
       >
         <h2 className="text-4xl font-extrabold text-center mb-12">Floor</h2>
-        <div className="flex justify-center gap-4 p-2">
+        <div className="flex flex-col items-center justify-center min-h-screen gap-4">
   <motion.div>
     <img 
       src="./SittBrooks_level_0_horiz_no_labels-1536x1006.jpg" 

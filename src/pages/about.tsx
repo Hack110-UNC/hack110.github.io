@@ -48,7 +48,7 @@ export default function about() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.1 }}
-                            className="bg-white p-8 rounded-lg backdrop-blur-sm h-64"
+                            className="flex-col bg-white p-8 rounded-lg backdrop-blur-sm h-64"
                         >   
                             <h3 className="text-black text-2xl font-bold mb-3">What is Hack 110</h3>
                             <p className="text-black">Hack 110 is an experience created specifically for students currently taking COMP 110 who have <b>no</b> prior experience outside of the class itself. It's a beginner-friendly hackathon designed to introduce new programmers to the world of collaborative coding.</p>
@@ -58,7 +58,7 @@ export default function about() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
-                            className="bg-white p-8 rounded-lg backdrop-blur-sm h-64"
+                            className="flex-col bg-white p-8 rounded-lg backdrop-blur-sm h-64"
                         >
                             <h3 className="text-black text-2xl font-bold mb-3">Our Mission</h3>
                             <p className="text-black">Our goal is to build confidence in beginner programmers by providing a supportive environment where they can apply what they've learned, work with peers, and create something meaningful without feeling intimidated.</p>
