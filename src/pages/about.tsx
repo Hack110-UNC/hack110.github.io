@@ -54,7 +54,7 @@ export default function about() {
                             transition={{ duration: 0.5, delay: 0.1 }}
                             className="flex-col bg-white p-8 rounded-lg backdrop-blur-sm h-64"
                         >   
-                            <h3 className="text-black text-2xl font-bold mb-3">What is Hack 110</h3>
+                            <h3 className="text-black text-2xl font-bold mb-3">What is Hack 110?</h3>
                             <p className="text-black">Hack 110 is an experience created specifically for students currently taking COMP 110 who have <b>no</b> prior experience outside of the class itself. It's a beginner-friendly hackathon designed to introduce new programmers to the world of collaborative coding.</p>
                         </motion.div>
 
