@@ -12,12 +12,16 @@ export default function Workshops() {
           </Link>
           
           <nav>
-            <ul className="flex gap-8">
+            <ul className="grid grid-cols-2 sm:flex sm:flex-row sm:gap-8 gap-1 items-center text-lg">
               <li><Link to="/" className="hover:text-blue-400 transition">Home</Link></li>
               <li><Link to="/about" className="hover:text-blue-400 transition">About</Link></li>
               <li><Link to="/map" className="hover:text-blue-400 transition">Map</Link></li>
               <li><Link to="/workshops" className="hover:text-blue-400 transition">Workshops</Link></li>
-              <li><Link to="https://forms.gle/DtV1ujdDXusFR7MRA" className="text-blue-400 font-bold hover:text-blue-300 transition">Sign Up</Link></li>
+              <li className="col-span-2 text-center">
+                <Link to="https://forms.gle/DtV1ujdDXusFR7MRA" className="text-blue-400 font-bold hover:text-blue-300 transition">
+                  Sign Up
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>
@@ -43,8 +47,8 @@ export default function Workshops() {
             { time: "3:00 - 3:30 PM", room: "FB 009", workshop: "CS Outside the Classroom" },
             { time: "3:30 - 4:00 PM", room: "FB 009", workshop: "Machine Learning/AI Workshop" },
             { time: "4:00 - 7:00 PM", room: "FB 009", workshop: "Poker" },
-            { time: "6:00 - 6:30 PM", room: "IDK", workshop: "Navigating The Major" },
-            { time: "6:30 - 7:00 PM", room: "IDK", workshop: "Leetcode Workshop" },
+            { time: "6:00 - 6:30 PM", room: "SN 115", workshop: "Navigating The Major" },
+            { time: "6:30 - 7:00 PM", room: "SN 014", workshop: "Leetcode Workshop" },
             { time: "7:00 - 8:00 PM", room: "SN 115", workshop: "Kahoot Trivia" },
           ].map((shop, i) => (
             <motion.div 

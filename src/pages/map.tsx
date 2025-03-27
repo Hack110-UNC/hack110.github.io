@@ -12,12 +12,16 @@ export default function Map() {
           </Link>
           
           <nav>
-            <ul className="flex flex-col sm:flex-row sm:gap-8 gap-4 items-center text-lg">
+            <ul className="grid grid-cols-2 sm:flex sm:flex-row sm:gap-8 gap-1 items-center text-lg">
               <li><Link to="/" className="hover:text-blue-400 transition">Home</Link></li>
               <li><Link to="/about" className="hover:text-blue-400 transition">About</Link></li>
               <li><Link to="/map" className="hover:text-blue-400 transition">Map</Link></li>
               <li><Link to="/workshops" className="hover:text-blue-400 transition">Workshops</Link></li>
-              <li><Link to="https://forms.gle/DtV1ujdDXusFR7MRA" className="text-blue-400 font-bold hover:text-blue-300 transition">Sign Up</Link></li>
+              <li className="col-span-2 text-center">
+                <Link to="https://forms.gle/DtV1ujdDXusFR7MRA" className="text-blue-400 font-bold hover:text-blue-300 transition">
+                  Sign Up
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>
